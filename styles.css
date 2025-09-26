@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.logo {
+  height: 53px;
+  width: 86px;
+  margin: 64px auto;
+}
+.main-container {
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  padding: 32px 24px;
+  display: grid;
+}
+.input-wrapper {
+    position: relative;
+}
+.dollar-icon, .person-icon {
+    position: absolute;
+    left: 16px;
+    top: 48px;
+}
+label,
+.tip-title {
+  color: hsl(186, 14%, 43%);
+  line-height: 24px;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.bill,
+.people-number {
+  background-color: hsl(189, 47%, 97%);
+  border: none;
+  height: 48px;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  margin-bottom: 32px;
+  padding: 0 17px;
+  text-align: end;
+  width: 100%;
+}
+.bill::placeholder,
+.people-number::placeholder {
+  color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.tip-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.tip-button,
+.custom-tip {
+  border-radius: 5px;
+  border: none;
+  height: 48px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.tip-button {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 47%, 97%);
+}
+
+.custom-tip {
+  background-color: hsl(189, 47%, 97%);
+  color: #547878;
+  text-align: center;
+}
+
+.tip-container {
+  padding: 24px;
+  background-color: hsl(183, 100%, 15%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 24px;
+}
+.tip-amount-container,
+.total-amount-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tip,
+.total {
+  color: hsl(0, 100%, 100%);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.person {
+  color: hsl(184, 14%, 56%);
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 700;
+}
+.tip-amount,
+.total-amount {
+  color: hsl(172, 67%, 45%);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.67px;
+  line-height: auto;
+}
+.reset-button {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  line-height: 30px;
+  height: 48px;
+  border-radius: 5px;
+  font-weight: 700;
+  border: none;
+}
