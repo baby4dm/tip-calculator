@@ -159,7 +159,7 @@ label,
   background-color: #0d686d;
   cursor: default;
 }
-.active {
+.a.tip-button.active {
   background-color: #9fe8df;
   color: hsl(183, 100%, 15%);
 }
@@ -235,3 +235,4 @@ label,
     margin-top: auto;
   }
 }
+
