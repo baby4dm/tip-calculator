@@ -197,7 +197,8 @@ label,
 
 @media (min-width: 1440px) {
   .logo {
-    margin-top: 180px;
+    margin-top: 150px;
+    margin-bottom: 84px;
   }
   .main-container {
     padding: 32px;
