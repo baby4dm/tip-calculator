@@ -196,6 +196,9 @@ label,
 }
 
 @media (min-width: 1440px) {
+  .logo {
+    margin-top: 100px;
+  }
   .main-container {
     padding: 32px;
     display: grid;
