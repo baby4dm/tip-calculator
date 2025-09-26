@@ -21,17 +21,17 @@ body {
 .main-container {
   background-color: hsl(0, 100%, 100%);
   border-radius: 25px 25px 0 0;
-  width: 100%;
   padding: 32px 24px;
   display: grid;
 }
 .input-wrapper {
-    position: relative;
+  position: relative;
 }
-.dollar-icon, .person-icon {
-    position: absolute;
-    left: 16px;
-    top: 48px;
+.dollar-icon,
+.person-icon {
+  position: absolute;
+  left: 16px;
+  top: 48px;
 }
 label,
 .tip-title {
@@ -138,4 +138,59 @@ label,
   border-radius: 5px;
   font-weight: 700;
   border: none;
+}
+@media (min-width: 768px) {
+  .main-container {
+    padding: 48px 80px;
+    border-radius: 15px;
+    margin-inline: 80px;
+  }
+  .tip-buttons-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .tip-container {
+    padding: 24px 32px;
+  }
+  .tip-amount,
+  .total-amount {
+    font-size: 48px;
+    line-height: 71px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 48px;
+  }
+  .input-container {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .tip-container {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .bill,
+  .people-number {
+    margin: 0;
+  }
+  .tip-title {
+    margin-top: 40px;
+  }
+  .tip-buttons-container {
+    margin-bottom: 40px;
+  }
+  .reset-button {
+    margin-top: auto;
+  }
 }
