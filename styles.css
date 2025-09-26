@@ -201,6 +201,9 @@ label,
     align-items: center;
     justify-content: center;
   }
+  .logo {
+    margin-top: 0;
+  }
   .main-container {
     padding: 32px;
     display: grid;
