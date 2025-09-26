@@ -23,6 +23,7 @@ body {
   border-radius: 25px 25px 0 0;
   padding: 32px 24px;
   display: grid;
+  min-height: 789px;
 }
 .input-wrapper {
   position: relative;
@@ -67,8 +68,8 @@ label,
 
 .tip-buttons-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 16px;
   width: 100%;
   margin-bottom: 32px;
@@ -86,6 +87,7 @@ label,
 .tip-button {
   background-color: hsl(183, 100%, 15%);
   color: hsl(189, 47%, 97%);
+  cursor: pointer;
 }
 
 .custom-tip {
@@ -95,18 +97,20 @@ label,
 }
 
 .tip-container {
-  padding: 24px;
+  padding: 32px 24px;
   background-color: hsl(183, 100%, 15%);
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   gap: 24px;
+  min-height: 257px;
 }
 .tip-amount-container,
 .total-amount-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .tip,
 .total {
@@ -138,19 +142,44 @@ label,
   border-radius: 5px;
   font-weight: 700;
   border: none;
+  margin-top: auto;
+  cursor: pointer;
+}
+.bill:focus,
+.people-number:focus,
+.custom-tip:focus {
+  outline: none;
+  background-color: #f3f9fa;
+  border: 2px solid #26c2ae;
+}
+.empty {
+  background-color: #0d686d;
+}
+.reset-button.empty:hover {
+  background-color: #0d686d;
+  cursor: default;
 }
 @media (min-width: 768px) {
   .main-container {
     padding: 48px 80px;
     border-radius: 15px;
-    margin-inline: 80px;
+    margin-inline: 86px;
+    min-height: 800px;
+    margin-top: 0;
+  }
+  .bill {
+    margin-bottom: 24px;
   }
   .tip-buttons-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 24px;
   }
   .tip-container {
-    padding: 24px 32px;
+    padding: 30px 43px 30px 43px;
+  }
+  .people-number {
+    margin-bottom: 40px;
   }
   .tip-amount,
   .total-amount {
@@ -171,6 +200,9 @@ label,
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 48px;
+    min-height: 481px;
+    margin-inline: 288px;
+    margin-top: 0;
   }
   .input-container {
     grid-column: 1;
@@ -189,6 +221,12 @@ label,
   }
   .tip-buttons-container {
     margin-bottom: 40px;
+  }
+  .tip-button:hover,
+  .reset-button:hover,
+  .active {
+    background-color: #9fe8df;
+    color: hsl(183, 100%, 15%);
   }
   .reset-button {
     margin-top: auto;
