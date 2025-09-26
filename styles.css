@@ -159,6 +159,10 @@ label,
   background-color: #0d686d;
   cursor: default;
 }
+.active {
+  background-color: #9fe8df;
+  color: hsl(183, 100%, 15%);
+}
 @media (min-width: 768px) {
   .main-container {
     padding: 48px 80px;
@@ -223,8 +227,7 @@ label,
     margin-bottom: 40px;
   }
   .tip-button:hover,
-  .reset-button:hover,
-  .active {
+  .reset-button:hover {
     background-color: #9fe8df;
     color: hsl(183, 100%, 15%);
   }
