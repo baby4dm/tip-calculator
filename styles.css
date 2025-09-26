@@ -196,11 +196,6 @@ label,
 }
 
 @media (min-width: 1440px) {
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .logo {
     margin-top: 0;
   }
