@@ -159,9 +159,12 @@ label,
   background-color: #0d686d;
   cursor: default;
 }
-.a.tip-button.active {
+.active {
   background-color: #9fe8df;
   color: hsl(183, 100%, 15%);
+}
+.tip-button {
+  -webkit-tap-highlight-color: transparent;
 }
 @media (min-width: 768px) {
   .main-container {
@@ -235,4 +238,3 @@ label,
     margin-top: auto;
   }
 }
-
